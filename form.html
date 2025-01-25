@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+               form  
+                    
+            </title>
+            <style>
+                body{
+                    background-image: url(mountain_background_image.jpg);
+                    background-repeat: no-repeat;
+                    background-size:cover;
+                }
+              
+                form{
+
+                    color: blueviolet;
+                }
+            </style>
+    </head>
+    <body style= "background-color:blue">
+        
+      <form action="/submit" method="post" enctype="multipart/form-data" >
+        <!--name field-->
+        <label for="name">name</label>
+       <input type="text" id="name" name="name" required placeholder="enter your name" value="vraj"><br><br>
+           
+       <!--age field-->
+       <label for="age">age</label>
+       <input type="number" id="age" name="age" required placeholder="enter your age"  min="18" max="45"><br><br>
+
+       <!--email field-->
+       <label for="email">email</label>
+       <input type="email" id="email" name="email" required placeholder="enter your email" ><br><br>
+
+       <!--password field-->
+       <label for="password">password</label>
+       <input type="password" id="password" name="password" required ><br><br>
+
+       <!--confirm password-->
+        <label for="confirm password">confirm password</label>
+        <input type="password" id="confirm_password" name="confirm_password" required ><br><br>
+
+        <!--address field-->
+       <label for="address">address</label> <br>
+       <textarea id="address" name="address" rows="5" cols="20" required > </textarea><br>
+
+       <!--gender field-->
+       
+<label>gender</label><br>
+<label for="male">male</label>
+<input type="radio" id="male" name="gender" value="male" required><br>
+<label for="female">female</label>
+<input type="radio" id="female" name="gender" value="female" required><br>
+<label for="other">other</label>
+<input type="radio" id="other" name="gender" value="other" required><br><br>
+
+<!--course field-->
+<label for="course">course</label><br>
+<select id="course" name="course" required >
+    <option value="cse">cse</option>
+    <option value="AIML">AIML</option>
+</select>
+<br><br>
+
+
+<!--file attachment-->
+<label for="file">file</label>
+<input type="file" required> <br> <br>
+
+
+<!--check box (click me)-->
+<input type="checkbox" id="click_me" name="click_me"> <br>
+
+
+<button type="submit">submit</button>
+ 
+
+</form>
+    </body>
+</html>
